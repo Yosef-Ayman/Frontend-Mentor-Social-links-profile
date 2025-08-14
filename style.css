@@ -98,7 +98,11 @@ main .links a:hover {
 }
 
 @media screen and (max-width: 800px) {
+    * {
+        font-size: small;
+    }
     main {
         width: 98%;
     }
 }
+

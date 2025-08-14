@@ -1,6 +1,6 @@
 # 👤 Social Links Profile
 
-Repository URL:
+Repository URL: https://yosef-ayman.github.io/Frontend-Mentor-Social-links-profile/
 
 This project is a fully responsive **social links profile page** built with HTML & CSS, created as part of a **Frontend Mentor** challenge.  
 It showcases a personal profile with name, location, short bio, and quick links to various social platforms, all in a clean and modern card design.

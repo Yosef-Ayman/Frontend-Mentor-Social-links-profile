@@ -48,8 +48,10 @@ main {
 }
 
 img {
-    scale: 0.8;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    border: 3px solid hsl(75, 94%, 57%);
 }
 
 h1 {
@@ -105,4 +107,5 @@ main .links a:hover {
         width: 98%;
     }
 }
+
 

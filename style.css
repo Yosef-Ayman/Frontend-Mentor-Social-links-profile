@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
-    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: Inter, Serif, serif;
 }
 
 @font-face {
@@ -28,84 +30,67 @@
 }
 
 body {
-    font-family: Inter, Serif, serif;
-    width: 100%;
+    background-color: hsl(0, 0%, 8%);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(0, 0%, 8%);
+    color: white;
     padding: 2rem;
 }
 
 main {
     background-color: hsl(0, 0%, 12%);
     display: flex;
-    align-items: center;
     flex-direction: column;
-    width: 50%;
-    padding: 2rem;
-    border-radius: 1rem;
+    align-items: center;
+    width: 500px;
+    padding: 3rem 2rem;
+    border-radius: 0.7rem;
 }
 
 img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border: 3px solid hsl(75, 94%, 57%);
+    margin-bottom: 1.2rem;
 }
 
-h1 {
-    font-weight: 600;
-}
-
-main .location {
-    color: hsl(75, 94%, 57%);
-    font-size: 14px;
-    font-weight: 600;
-}
-
-p {
-    margin: 2rem 0;
-    font-weight: 100;
-}
-main .links {
+.links {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
 }
-main .links a {
-    font-weight: 700;
-    margin: 0.5rem;
+
+.links a {
+    width: 100%;
+    margin: 0.5rem 0;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 10px;
     background-color: hsl(0, 0%, 20%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5rem 0;
+    color: white;
     text-decoration: none;
-    border-radius: 1rem;
+    font-weight: 600;
 }
 
-main .attribution a {
-    display: inline;
-    text-decoration: underline;
-    color: blue;
-}
+.links a:hover{background-color: hsl(75, 94%, 57%); color:hsl(0, 0%, 20%) }
+.name {font-weight: 600;font-size: 1.7em;margin: 0.8rem; }
+.location{color: hsl(75, 94%, 57%); font-weight: 600 }
+p {margin: 2rem 0 1rem }
+.attribution {margin-top: 1.8rem }
 
-main .links a:hover {
-    text-decoration: none;
-    background-color: hsl(75, 94%, 57%);
-    color: hsl(0, 0%, 20%);
-}
-
-@media screen and (max-width: 800px) {
-    * {
-        font-size: small;
+@media screen and (max-width: 568px) {
+    body {
+        background-color: hsl(0, 0%, 12%);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        color: white;
+        padding: 0;
     }
+
     main {
-        width: 98%;
+        width: 100%;
+        border-radius: 0;
     }
 }
-
-
